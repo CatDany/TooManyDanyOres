@@ -3,6 +3,7 @@ package dany.toomanygoddamnores;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraftforge.common.MinecraftForge;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -39,8 +40,20 @@ public class TooManyDanyOres
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent e)
 	{
-		MinecraftForge.EVENT_BUS.register(new Handler());
-		MinecraftForge.EVENT_BUS.register(new Warnings());
+		registerEventHandler(new Handler(), true, false);
+		registerEventHandler(new Warnings(), true, false);
 		logger.info("Init is done");
+	}
+	
+	private void registerEventHandler(Object instance, boolean forge, boolean fml)
+	{
+		if (forge)
+		{
+			MinecraftForge.EVENT_BUS.register(instance);
+		}
+		if (fml)
+		{
+			FMLCommonHandler.instance().bus().register(instance);
+		}
 	}
 }

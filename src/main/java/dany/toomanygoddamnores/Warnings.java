@@ -17,7 +17,7 @@ public class Warnings
 	@SideOnly(Side.CLIENT)
 	public void openMainMenu(GuiOpenEvent e)
 	{
-		if (e.gui instanceof GuiMainMenu && Config.replacements.isEmpty())
+		if (e.gui instanceof GuiMainMenu && Config.replacements.isEmpty() && Config.itemReplacements.isEmpty())
 		{
 			File file = new File(configDir, Refs.MOD_ID + "_data");
 			if (!file.exists())
