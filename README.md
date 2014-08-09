@@ -1,7 +1,8 @@
 TooManyDanyOres
 ========================
-Original idea by ollieread
-1.7.10 port (made from scratch) + some features by CatDany
+Too Many Ores? Solved!
+
+[FTB Forum Thread](http://forum.feed-the-beast.com/threads/1-7-10-forge-toomanydanyoresb1-0-2-too-many-ores-solved.49109)
 
 Downloads
 ========================
