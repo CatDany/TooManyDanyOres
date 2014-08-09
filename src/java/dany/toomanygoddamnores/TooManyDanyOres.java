@@ -16,10 +16,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 	dependencies = Refs.DEPENDENCIES,
 	acceptedMinecraftVersions = "1.7.10"
 )
-public class TooManyGodDamnOres
+public class TooManyDanyOres
 {
 	@Instance(Refs.MOD_ID)
-	public static TooManyGodDamnOres instance;
+	public static TooManyDanyOres instance;
 	
 	public static Logger logger;
 	

@@ -35,7 +35,7 @@ public class GuiStartupWarning extends GuiScreen
 	{
 		drawDefaultBackground();
 		drawCenteredString(fontRendererObj, "WARNING!", this.width / 2, 84, 0xff0000);
-		drawCenteredString(fontRendererObj, "You're using Dany's TooManyGodDamnOres Mod.", this.width / 2, 94, 0xffffff);
+		drawCenteredString(fontRendererObj, "You're using " + Refs.MOD_NAME + " Mod.", this.width / 2, 94, 0xffffff);
 		drawCenteredString(fontRendererObj, "But you didn't set up the configuration file.", this.width / 2, 106, 0xffffff);
 		drawCenteredString(fontRendererObj, "Do not report any issues!", this.width / 2, 132, 0xffffff);
 		
@@ -54,7 +54,7 @@ public class GuiStartupWarning extends GuiScreen
 			}
 			catch (Throwable t)
 			{
-				TooManyGodDamnOres.logger.warn("Unable to open website! Try yourself: " + Refs.CONFIG_EXAMPLES);
+				TooManyDanyOres.logger.warn("Unable to open website! Try yourself: " + Refs.CONFIG_EXAMPLES);
 				buttonExamples.displayString = "<ERROR>";
 				buttonExamples.enabled = false;
 			}

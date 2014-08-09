@@ -17,7 +17,7 @@ public class Warnings
 	@SideOnly(Side.CLIENT)
 	public void openMainMenu(GuiOpenEvent e)
 	{
-		if (e.gui instanceof GuiMainMenu)
+		if (e.gui instanceof GuiMainMenu && Config.replacements.isEmpty())
 		{
 			File file = new File(configDir, Refs.MOD_ID + "_data");
 			if (!file.exists())
@@ -28,8 +28,8 @@ public class Warnings
 				}
 				catch (Throwable t)
 				{
-					TooManyGodDamnOres.logger.warn("Unable to create a data file!");
-					TooManyGodDamnOres.logger.catching(t);
+					TooManyDanyOres.logger.warn("Unable to create a data file!");
+					TooManyDanyOres.logger.catching(t);
 				}
 				
 				e.gui = new GuiStartupWarning((GuiMainMenu)e.gui);
