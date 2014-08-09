@@ -1,7 +1,11 @@
 .gradle
 .settings
+bin
+build
 eclipse
 gradle
 build.cmd
 gradlew
 gradlew.bat
+.classpath
+.project
