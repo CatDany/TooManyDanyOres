@@ -1,0 +1,7 @@
+.gradle
+.settings
+eclipse
+gradle
+build.cmd
+gradlew
+gradlew.bat
