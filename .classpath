@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src/java"/>
-	<classpathentry kind="src" path="src/resources"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Dany/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1199/forgeSrc-1.7.10-10.13.0.1199.jar" sourcepath="C:/Users/Dany/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.0.1199/forgeSrc-1.7.10-10.13.0.1199-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="C:/Users/Dany/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.9/116f2aad5b0c68353ebed66cd463517db6522f7e/launchwrapper-1.9.jar"/>

@@ -17,13 +17,15 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "2.0"
+version = "b1.0-1"
 group= "dany.toomanygoddamnores" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "Dany's TooManyGodDamnOres"
+archivesBaseName = "TooManyDanyOres"
 
 minecraft {
     version = "1.7.10-10.13.0.1199"
     assetDir = "eclipse/assets"
+	
+	replace '%VERSION', project.version
 }
 
 dependencies {

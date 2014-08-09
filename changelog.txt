@@ -1,0 +1,8 @@
+@ What does this version number mean?
+1. State: 'd' means indev, 'a' means alpha, 'b' means beta, 'r' means release
+2. Major: major changes to a mod
+3. Minor: important changes to a mod
+4. Build: Whenever the mod is built by ForgeGradle (IDE builds don't count). Also independent from the other ones
+
+b1.0-1 (2014/08/09 19:15 GMT+0)
+- Initial beta release

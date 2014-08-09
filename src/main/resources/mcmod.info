@@ -1,0 +1,16 @@
+[
+{
+  "modid": "TooManyDanyOres",
+  "name": "TooManyDanyOres",
+  "description": "Too Many Ores? Solved!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CatDany"],
+  "credits": "Original idea by ollieread",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

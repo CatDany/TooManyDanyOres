@@ -1,9 +1,9 @@
 package dany.toomanygoddamnores;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-import scala.actors.threadpool.Arrays;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StringUtils;
 import net.minecraftforge.common.config.Property;
