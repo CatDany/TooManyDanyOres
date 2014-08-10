@@ -8,6 +8,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
 @Mod
 (
@@ -42,7 +43,16 @@ public class TooManyDanyOres
 	{
 		registerEventHandler(new Handler(), true, false);
 		registerEventHandler(new Warnings(), true, false);
+		
 		logger.info("Init is done");
+	}
+	
+	@Mod.EventHandler
+	public void serverLoad(FMLServerStartingEvent e)
+	{
+		e.registerServerCommand(new CommandItemInfo());
+		
+		logger.info("ServerStarting is done");
 	}
 	
 	private void registerEventHandler(Object instance, boolean forge, boolean fml)
